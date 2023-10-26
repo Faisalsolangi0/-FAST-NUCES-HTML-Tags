@@ -1,0 +1,57 @@
+nav ul {
+    list-style: none;
+    padding: 0;
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+nav li:hover .dropdown {
+    display: block;
+}
+
+.marquee {
+    height: 100px;
+    margin-left: 30px;
+    overflow: hidden;
+    border: 2px solid black;
+    width: 30%;
+}
+
+.marquee p {
+    animation: marquee 5s linear infinite;
+    margin: 0;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.outlined-div {
+    width: 200px;
+    height: 100px;
+    background-color: #e0e0e0;
+    outline: 2px solid blue;
+}
